@@ -13,7 +13,12 @@
 </head>
 <body>
     <div class="container">
-        <div class="row-1">
+         <a href="#row-2" class="go-header">
+               <span class="material-symbols-outlined">
+               expand_less
+               </span>
+         </a>
+        <div id="row-1" class="row-1">
              <div class="grid wide">
                   <div class="row-1-col-1">
                         <img src="https://thekingincatsle.github.io/Manchester-United-website/pic/logo.png" alt="">
@@ -45,11 +50,10 @@
                   </div>
              </div>
         </div>
-
-        <div class="row-2">
+        <div id="row-2" class="row-2">
              <div class="grid wide"></div>
         </div>
-        <div id="row-3"class="row-3">
+        <div id="row-3" class="row-3">
              <div class="grid wide">
                   <div class="row row-3-row-1">
                         <p>FIRST TEAM</p>
@@ -347,5 +351,116 @@
              </div>
         </div>
     </div>
+    <div class="container-modal">
+     <div class="modal">
+          <div class="close-btn">
+               <span class="material-symbols-outlined">
+                    close
+                    </span>
+          </div>
+           <div class="modal-col-1">
+               <img src="https://thekingincatsle.github.io/Manchester-United-website/pic/LegendName/rooney.png" alt="">
+           </div>
+           <div class="modal-col-2">
+               <div class="general">
+                 <div class="modal-col-2-row-1">
+                      <button class="general-btn">GENERAL</button>
+                      <button class="title-btn">TITLE</button>
+                 </div>
+                 <div class="modal-col-2-row-2">
+                      <p>Wayne Rooney</p>
+                      <p>Birth: 16/11/1974
+                      </p>
+                      <p class="country">
+                           Nationality:
+                           <img src="https://thekingincatsle.github.io/Manchester-United-website/pic/Nationality/england.png" alt="">
+                           England
+                      </p>
+                      <p>
+                           Wayne Rooney is Manchester United's all-time leading scorer and the only player to have scored 250 goals for the Reds.
+                      </p>
+                 </div>
+                 <div class="modal-col-2-row-3">
+                           <div class="col">
+                                <p>Appearances:</p>
+                                <p>559</p>
+                           </div>
+                           <div class="col">
+                                <p>Total Goals:</p>
+                                <p>253</p>
+                           </div>
+                 </div>
+                 </div>
+                 <div class="title">
+                    <div class="modal-col-2-row-1">
+                         <button>GENERAL</button>
+                         <button>TITLE</button>
+                    </div>
+                      <div class="title-row title-row-1">
+                           <img src="https://thekingincatsle.github.io/Manchester-United-website/pic/Cup/premierLeague.png" alt="">
+                           <img src="https://thekingincatsle.github.io/Manchester-United-website/pic/Cup/premierLeague.png" alt="">
+                           <img src="https://thekingincatsle.github.io/Manchester-United-website/pic/Cup/premierLeague.png" alt="">
+                           <img src="https://thekingincatsle.github.io/Manchester-United-website/pic/Cup/premierLeague.png" alt="">
+                           <img src="https://thekingincatsle.github.io/Manchester-United-website/pic/Cup/premierLeague.png" alt="">
+                           <img src="https://thekingincatsle.github.io/Manchester-United-website/pic/Cup/premierLeague.png" alt="">
+                           <img src="https://thekingincatsle.github.io/Manchester-United-website/pic/Cup/premierLeague.png" alt="">
+                           <img src="https://thekingincatsle.github.io/Manchester-United-website/pic/Cup/premierLeague.png" alt="">
+                           <img src="https://thekingincatsle.github.io/Manchester-United-website/pic/Cup/premierLeague.png" alt="">
+                           <img src="https://thekingincatsle.github.io/Manchester-United-website/pic/Cup/premierLeague.png" alt="">
+                           <img src="https://thekingincatsle.github.io/Manchester-United-website/pic/Cup/premierLeague.png" alt="">
+                      </div>
+                      <div class="title-row title-row-2">
+                          <img src="https://thekingincatsle.github.io/Manchester-United-website/pic/Cup/FaCup.png" alt="">
+                          <img src="https://thekingincatsle.github.io/Manchester-United-website/pic/Cup/FaCup.png" alt="">
+                          <img src="https://thekingincatsle.github.io/Manchester-United-website/pic/Cup/FaCup.png" alt="">
+                          <img src="https://thekingincatsle.github.io/Manchester-United-website/pic/Cup/FaCup.png" alt="">
+                          <img src="https://thekingincatsle.github.io/Manchester-United-website/pic/Cup/FaCup.png" alt="">
+                          <img src="https://thekingincatsle.github.io/Manchester-United-website/pic/Cup/FaCup.png" alt="">
+                      </div>
+                      <div class="title-row title-row-3">
+                           <img src="https://thekingincatsle.github.io/Manchester-United-website/pic/Cup/ChampionLeague.png" alt="">
+                           <img src="https://thekingincatsle.github.io/Manchester-United-website/pic/Cup/ChampionLeague.png" alt="">
+                           <img src="https://thekingincatsle.github.io/Manchester-United-website/pic/Cup/ChampionLeague.png" alt="">
+                      </div>
+                      <div class="title-row title-row-4">
+                            <img src="https://thekingincatsle.github.io/Manchester-United-website/pic/Cup/Intercontinent.png" alt="">
+                      </div>
+                 </div>
+           </div>
+     </div>
+<script>
+     const colImgs = document.querySelectorAll('.row-6-row-2-col')
+     const containerModal = document.querySelector('.container-modal')
+     const modal = document.querySelector('.modal')
+     const closeModal =document.querySelector('.close-btn')
+     const titleBtn =document.querySelector('.title-btn')
+     const generalBtn =document.querySelector('.general-btn')
+     const containerTitle = document.querySelector('.title')
+     const containerGeneral = document.querySelector('.general')
+     function showModal() {
+          containerModal.classList.add('open')
+     }
+     function hideModal() {
+          containerModal.classList.remove('open')
+     }
+     function showTitle() {
+          containerTitle.classList.add('open'),
+          containerGeneral.classList.add('remove')
+     }
+     function showGeneral() {
+          containerTitle.classList.remove('open')
+
+     }
+     for (const colImg of colImgs){
+           colImg.addEventListener('click',showModal)}
+     containerModal.addEventListener('click',hideModal)
+     modal.addEventListener('click',function(even){
+          even.stopPropagation()
+     })
+     closeModal.addEventListener('click',hideModal)
+     titleBtn.addEventListener('click',showTitle)
+     generalBtn.addEventListener('click',showGeneral)
+</script>
+</div>
 </body>
 </html>
